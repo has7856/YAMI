@@ -10,4 +10,4 @@
 * JavaScript
 
 ##프로젝트 개요
-[Figma]()
+[Figma](https://www.figma.com/file/UGRK647YoK1GTa9bv0R8Dk/smilefood-YAMI?node-id=0%3A1)
