@@ -76,11 +76,11 @@ a, a:link{
 }
 #product > ul{
     display: flex;
-    justify-content: center;
-    column-gap: 30px;
+    justify-content: space-around;
 }
-#product img{
+#product li{
     border-radius: 50%;
+    overflow: hidden;
 }
 footer{
     border-top: 1px solid black;
