@@ -165,6 +165,7 @@ article > hr{
 .article-wrap > p{
     margin: 30px 0;
     text-align: center;
+    line-height: 1.6rem;
 }
 .mind{
     display: flex;
@@ -248,4 +249,11 @@ article > hr{
 }
 .breadcrumb a:hover{
     color: red;
+}
+.brand{
+    display: flex;
+    column-gap: 1rem;
+    justify-content: center;
+    text-align: center;
+    margin: 30px 0;
 }
