@@ -142,7 +142,7 @@ footer{
 
 /* main > about > intro style */
 
-article{
+.article-wrap{
     width: 900px;
     margin: 0 auto;
 }
@@ -150,7 +150,13 @@ article h3{
     text-align: center;
     font-weight: bold;
     color: #d60c00;
-    margin: 30px 0;
+    margin: 30px 0 15px 0;
+    font-size: 25px;
+}
+article > hr{
+    max-width: 20%;
+    border: 0;
+    border-bottom: 2px solid #d60c00;
 }
 .article-wrap{
     max-width: 900px;
@@ -201,6 +207,20 @@ article h3{
     width: 80%;
     border: 0;
     border-top: 1px solid white;
+}
+.history{
+    display: flex;
+    margin: 30px 0;
+}
+.history ul{
+    width: 50%;
+}
+.history ul li{
+    display: flex;
+    margin: 1rem 0;
+}
+.history ul li p:nth-child(1){
+    margin-right: 1rem;
 }
 #slogan{
     border-bottom: 1px solid #ccc;
