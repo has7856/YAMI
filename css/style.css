@@ -257,3 +257,52 @@ article > hr{
     text-align: center;
     margin: 30px 0;
 }
+
+/* main > about > business style */
+.business{
+    display: flex;
+    column-gap: 1rem;
+    justify-content: center;
+}
+article h4{
+    font-size: 20px;
+    color: #d60c00;
+    margin: 30px 0;
+}
+
+/* main > about > map style */
+
+#maphead{
+    line-height: 2rem;
+}
+.map-img{
+    margin: 30px 0;
+    justify-content: center;
+}
+.wrap-contents{
+    display: flex;
+    margin-top: 30px;
+}
+.wrap-contents p{
+    margin-top: 30px;
+}
+#logo{
+    display: flex;
+    width: 30%;
+}
+#logo img{
+    width: 200px;
+    margin-top: 30px;
+}
+#map-view{
+    width: 70%;
+}
+#map-view ul li{
+    float: left;
+    margin: 0 10px;
+}
+#map-view p{
+    font-size: 20px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+}

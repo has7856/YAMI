@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,9 +10,11 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Noto+Sans+KR&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css" type="text/css">
 </head>
+
 <body>
     <h1 class="blind">스마일푸드 야미</h1>
     <header>
@@ -45,25 +48,62 @@
             </ul>
         </nav>
     </header>
+    <div id="slogan">
+        <div class="text">
+            <p>스마일푸드 야미는 식품을 통해 인류의 건강과 행복을 추구합니다.</p>
+        </div>
+        <div class="breadcrumb">
+            <a href="#">홈</a> &gt; 야미소개 &gt; 사업안내
+        </div>
+    </div>
     <section id="main">
         <h2 class="blind">main section</h2>
         <article>
-            <h3>페이지를 준비중입니다.</h3>
-            <p>페이지 준비중입니다.</p>
+            <h3 id="maphead">대한민국을 대표하는 식품<br>
+                스마일푸드 야미로 모십니다.
+            </h3>
+            <hr>
+            <div class="article-wrap">
+                <div class="wrap-contents">
+                    <div id="logo">
+                        <img src="../images/logo.gif" alt="스마일푸드 야미">
+                    </div>
+                    <div id="map-view">
+                        <p>광주광역시 광산구 하남산업단지 1211-2</p>
+                        <ul>
+                            <li><a href=""><img src="../images/mapbutton2.png" alt="#"></a></li>
+                            <li><a href=""><img src="../images/mapbutton1.png" alt="#"></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="map" style="width:500px;height:400px;"></div>
+            </div>
         </article>
     </section>
     <footer>
-            <nav id="footer-nav">
-                <ul>
-                    <li>개인정보취급방침</li>
-                    <li>이용약관</li>
-                    <li>고객센터</li>
-                </ul>
-            </nav>
+        <nav id="footer-nav">
+            <ul>
+                <li>개인정보취급방침</li>
+                <li>이용약관</li>
+                <li>고객센터</li>
+            </ul>
+        </nav>
         <div id="copyright">
             <img src="../images/footer_logo.gif" alt="">
             <p>Copyright&copy; 2021. Smile Food Yami All Rights Reserved</p>
         </div>
     </footer>
+    <script type="text/javascript"
+        src="//dapi.kakao.com/v2/maps/sdk.js?appkey=d72c368e41bc67300ba15f54393973b3"></script>
+    <script>
+        var container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
+        var options = { //지도를 생성할 때 필요한 기본 옵션
+            center: new kakao.maps.LatLng(35.14536720335304, 126.8816471606626), //지도의 중심좌표.
+            level: 3 //지도의 레벨(확대, 축소 정도)
+        };
+
+        var map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리턴
+    </script>
 </body>
+
 </html>
