@@ -53,7 +53,7 @@
             <p>스마일푸드 야미는 식품을 통해 인류의 건강과 행복을 추구합니다.</p>
         </div>
         <div class="breadcrumb">
-            <a href="#">홈</a> &gt; 야미소개 &gt; 사업안내
+            <a href="../index.html">홈</a> &gt; 야미소개 &gt; 사업안내
         </div>
     </div>
     <section id="main">
@@ -71,8 +71,8 @@
                     <div id="map-view">
                         <p>광주광역시 광산구 하남산업단지 1211-2</p>
                         <ul>
-                            <li><a href="#"><img src="../images/mapbutton2.png" alt="#"></a></li>
-                            <li><a href="#"><img src="../images/mapbutton1.png" alt="#"></a></li>
+                            <li><a href="https://www.google.co.kr/maps/@35.1651436,126.8782332,14.75z?hl=ko" target="blank"><img src="../images/mapbutton2.png" alt="#"></a></li>
+                            <li><a href="https://map.naver.com/v5/?c=14124892.2336178,4184331.7898997,15,0,0,0,dh" target="blank"><img src="../images/mapbutton1.png" alt="#"></a></li>
                         </ul>
                     </div>
                 </div>
@@ -103,6 +103,19 @@
         };
 
         var map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리턴
+                // 마커가 표시될 위치입니다 
+        var markerPosition  = new kakao.maps.LatLng(35.14536720335304, 126.8816471606626); 
+
+        // 마커를 생성합니다
+        var marker = new kakao.maps.Marker({
+            position: markerPosition
+        });
+
+        // 마커가 지도 위에 표시되도록 설정합니다
+        marker.setMap(map);
+
+        // 아래 코드는 지도 위의 마커를 제거하는 코드입니다
+        // marker.setMap(null);
     </script>
 </body>
 
