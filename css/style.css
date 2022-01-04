@@ -289,6 +289,7 @@ article h4{
 #logo{
     display: flex;
     width: 30%;
+    justify-content: center;
 }
 #logo img{
     width: 200px;
@@ -296,6 +297,7 @@ article h4{
 }
 #map-view{
     width: 70%;
+    margin-left: 40px;
 }
 #map-view ul li{
     float: left;
@@ -307,6 +309,5 @@ article h4{
     margin-left: 10px;
 }
 #map{
-    justify-content: center;
-    margin: 20px 0;
+    margin: 40px 0;
 }
