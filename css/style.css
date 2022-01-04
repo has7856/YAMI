@@ -311,3 +311,35 @@ article h4{
 #map{
     margin: 40px 0;
 }
+
+/* process > index.html css start */
+
+.step{
+    border: 3px solid gray;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2rem;
+    margin: 50px auto 30px;
+}
+.step .title{
+    color: #d60c00;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.title::after{
+    content: "";
+    display: block;
+    width: 20px;
+    height: 1px;
+    background-color: #d60c00;
+    margin: 10px auto 0;
+}
+.slick-prev:before, .slick-next:before {
+    color: #d60c00; !important
+}
