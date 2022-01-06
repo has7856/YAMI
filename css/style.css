@@ -340,6 +340,222 @@ article h4{
     background-color: #d60c00;
     margin: 10px auto 0;
 }
-.slick-prev:before, .slick-next:before {
+.custom-prev:before, .custom-next:before {
     color: #d60c00; !important
+}
+/* custom-arrows style */
+.custom-prev,
+.custom-next
+{
+    font-size: 0;
+    line-height: 0;
+
+    position: absolute;
+    top: 50%;
+
+    display: block;
+    /* 버튼 크기 */
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+
+    cursor: pointer;
+
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+.custom-prev:hover,
+.custom-prev:focus,
+.custom-next:hover,
+.custom-next:focus
+{
+    color: transparent;
+    outline: none;
+    background: transparent;
+}
+.custom-prev:hover:before,
+.custom-prev:focus:before,
+.custom-next:hover:before,
+.custom-next:focus:before
+{
+    opacity: 1;
+}
+.custom-prev.slick-disabled:before,
+.custom-next.slick-disabled:before
+{
+    opacity: .25;
+}
+
+.custom-prev:before,
+.custom-next:before
+{
+    font-family: 'slick';
+    font-size: 20px;
+    line-height: 1;
+
+    opacity: .75;
+    color: white;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.custom-prev
+{
+    left: -25px;
+}
+[dir='rtl'] .custom-prev
+{
+    right: -25px;
+    left: auto;
+}
+.custom-prev:before
+{
+    content: '';
+    background: url('../images/prev-arrow.png');
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+[dir='rtl'] .custom-prev:before
+{
+    content: '';
+    background: url('../images/prev-arrow.png');
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+
+.custom-next
+{
+    right: -25px;
+}
+[dir='rtl'] .custom-next
+{
+    right: auto;
+    left: -25px;
+}
+.custom-next:before
+{
+    content: '';
+    background: url('../images/next-arrow.png');
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+[dir='rtl'] .custom-next:before
+{
+    content: '';
+    background: url('../images/next-arrow.png');
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+.img-container{
+    justify-content: center;
+    display: flex;
+    margin: 30px 0;
+}
+
+/* member > signin.html css */
+.form-wrap{
+    width: 450px;
+    height: 650px;
+    margin: 0 auto;
+    border: 1px solid #999;
+    box-sizing: border-box;
+    padding: 40px;
+    margin-bottom: 40px;
+}
+.form-wrap > a{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+.form-wrap > a > img{
+    width: 150px;
+}
+.form-wrap > ul > li > input{
+    width: 370px;
+    height: 60px;
+    font-size: 16px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    padding-left: 20px;
+}
+.form-wrap > ul > li:last-child input{
+    background-color: #d60c00;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    border: 0;
+    cursor: pointer;
+}
+.form-wrap p{
+    text-align: center;
+    margin: 40px 0;
+    font-size: 14px;
+}
+#circle{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+#circle li{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    border: 1px solid #999;
+}
+#circle li a::before{
+    position: absolute;
+}
+#circle li:first-child a img{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    margin-left: -20px;
+    margin-top: -20px;
+}
+#circle li:nth-child(2) a img{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    margin-left: -24px;
+    margin-top: -24px;
+}
+#circle li:last-child a img{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    margin-left: -24px;
+    margin-top: -24px;
+}
+#sign{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+}
+#sign > li{
+    padding: 0 12px;
+    box-sizing: border-box;
+}
+#sign > li:nth-child(2){
+    border: 1px solid black;
+    border-top: 0;
+    border-bottom: 0;
+}
+#circle li:hover{
+    width: 84px;
+    height: 84px;
+    box-shadow: 2px 2px 2px gray;
+}
+#sign > li:hover{
+    color: #d60c00;
 }
