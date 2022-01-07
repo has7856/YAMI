@@ -465,7 +465,6 @@ article h4{
 /* member > signin.html css */
 .form-wrap{
     width: 450px;
-    height: 650px;
     margin: 0 auto;
     border: 1px solid #999;
     box-sizing: border-box;
@@ -558,4 +557,77 @@ article h4{
 }
 #sign > li:hover{
     color: #d60c00;
+}
+
+/* member > signup.html css start */
+
+fieldset{
+    width: 450px;
+    margin: 40px auto;
+    box-sizing: border-box;
+    padding: 40px;
+}
+fieldset > a{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+fieldset img{
+    width: 200px;
+}
+fieldset p{
+    margin-bottom: 5px;
+}
+#checkId{
+    color: red;
+    margin-top: 5px;
+    display: none;
+}
+fieldset > ul > li > label > input{
+    width: 500px;
+    height: 50px;
+    font-size: 12px;
+    box-sizing: border-box;
+    padding-left: 10px;
+    border: 1px solid #d60c00;
+
+}
+fieldset > ul > li{
+    margin-bottom: 30px;
+    justify-content: center;
+}
+#userBirth{
+    width: 150px;
+}
+#userBirth:last-child{
+    float: right;
+}
+fieldset > ul > li:nth-child(5) > label > select{
+    width: 150px;
+    height: 50px;
+    margin-left: 22px;
+    border: 1px solid #d60c00;
+    position: relative;
+    top: 1px;
+}
+fieldset > ul > li:nth-child(7) > label > input{
+    width: 325px;
+}
+fieldset > ul > li:nth-child(7) > input{
+    width: 150px;
+    height: 50px;
+    background-color: #d60c00;
+    color: white;
+    border: 0;
+    float: right;
+    font-size: 15px;
+}
+fieldset > ul > li:last-child > label > input{
+    width: 500px;
+    height: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #d60c00;
+    color: white;
+    border: 0;
 }

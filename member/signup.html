@@ -17,7 +17,82 @@
 
 <body>
     <article>
-        
+        <div class="article-wrap">
+                <form method="post" name="jinForm" action="joinCheck.php" autocomplete="off">
+                    <fieldset>
+                        <a href="../index.html"><img src="../images/logo.gif" alt="logo" id="signuplogo"></a>
+                        <!-- <legend>개인정보</legend> -->
+                        <ul>
+                            <li>
+                                <label for="userId">
+                                    <p>아이디</p>
+                                    <input type="text" id="userId" name="userId" maxlength="12" placeholder="대문자, 영어, 숫자 조합 6~12자" required>
+                                    <div id="checkId">사용가능합니다.</div>
+                                </label>
+                            </li>
+                            <li>
+                                <label for="userPw">
+                                    <p>비밀번호</p>
+                                    <input type="password" id="userPw" name="userPw" required>
+                                    <div id="checkId">사용가능합니다.</div>
+                                </label>
+                            </li>
+                            <li>
+                                <label for="userPw2">
+                                    <p>비밀번호 재확인</p>
+                                    <input type="password" id="userPw2" name="userPw2" required>
+                                    <div id="checkId">일치합니다.</div>
+                                </label>
+                            </li>
+                            <li>
+                                <label for="userName">
+                                    <p>이름</p>
+                                    <input type="text" id="userName" name="userName" required>
+                                </label>
+                            </li>
+                            <li>
+                                <label for="userBirth">
+                                    <p>생년월일</p>
+                                    <input type="text" id="userBirth" name="userBirth" placeholder="년(4자)" required>
+                                    <select name="birth" required>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                    </select>
+                                    <input type="text" id="userBirth" name="userBirth" placeholder="일" required>
+                                </label>
+                            </li>
+                            <li>
+                                <label for="userEmail">
+                                    <p>본인확인 이메일</p>
+                                    <input type="email" id="userEmail" name="userEmail" required>
+                                </label>
+                            </li>
+                            <li>
+                                <label for="userPhone">
+                                    <p>전화번호</p>
+                                    <input type="tel" id="userPhone" name="userPhone" placeholder="-없이 숫자만 입력" required>
+                                </label>
+                                <input type="button" value="인증번호 받기">
+                            </li>
+                            <li>
+                                <label for="">
+                                    <input type="submit" value="가입하기">
+                                </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </form>
+        </div>
     </article>
     <footer>
         <nav id="footer-nav">
